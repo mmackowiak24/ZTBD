@@ -1,0 +1,18 @@
+db.getCollection("flightConnections").find({})
+
+db.flightConnections.insertOne({
+    "departureCity": "Poznan",
+    "ArrivalCity": "London",
+    "departureAirport": "POZ",
+    "arrivalAirport": "STN",
+    "durationInMin": 130,
+    "distanceInKm": 1132,
+    "numberOfStops": 0,
+    "stopoverAirports": 'none, placeholder',
+    "Aircraft": "placeholder for reference to airplanes collection",
+    "Price": 150.00,
+    "daysOfOperation": ["Monday", "Thursday", "Saturday"],
+    "cabinCrew": "placeholder for reference",
+    "pilot": "placeholder for reference"
+})
+
