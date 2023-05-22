@@ -1,18 +1,111 @@
-db.getCollection("flightConnections").find({})
-
-db.flightConnections.insertOne({
-    "departureCity": "Poznan",
-    "ArrivalCity": "London",
-    "departureAirport": "POZ",
-    "arrivalAirport": "STN",
-    "durationInMin": 130,
-    "distanceInKm": 1132,
-    "numberOfStops": 0,
-    "stopoverAirports": 'none, placeholder',
-    "Aircraft": "placeholder for reference to airplanes collection",
-    "Price": 150.00,
-    "daysOfOperation": ["Monday", "Thursday", "Saturday"],
-    "cabinCrew": "placeholder for reference",
-    "pilot": "placeholder for reference"
-})
-
+db.flightConnections.insertMany([
+    {
+      "departureCity": "Warsaw",
+      "departureAirport": "WAW",
+      "arrivalCity": "London",
+      "arrivalAirport": "LHR",
+      "durationInMin": 150,
+      "distanceInKm": 1400,
+      "Aircraft": { "name": "Airbus A320", "aircraftId": ObjectId("aircraftId1") },
+      "Price": 200.00,
+      "daysOfOperation": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "cabinCrew": [
+        { "name": "John Smith", "employeeId": ObjectId("employeeId1") },
+        { "name": "Emily Johnson", "employeeId": ObjectId("employeeId2") }
+      ],
+      "pilot": { "name": "Emma Johnson", "employeeId": ObjectId("employeeId3") }
+    },
+    {
+      "departureCity": "Krakow",
+      "departureAirport": "KRK",
+      "arrivalCity": "Paris",
+      "arrivalAirport": "CDG",
+      "durationInMin": 180,
+      "distanceInKm": 1300,
+      "Aircraft": { "name": "Boeing 737", "aircraftId": ObjectId("aircraftId2") },
+      "Price": 250.00,
+      "daysOfOperation": ["Monday", "Wednesday", "Friday"],
+      "cabinCrew": [
+        { "name": "Sophia Anderson", "employeeId": ObjectId("employeeId4") },
+        { "name": "Daniel Johnson", "employeeId": ObjectId("employeeId5") }
+      ],
+      "pilot": { "name": "Michael Davis", "employeeId": ObjectId("employeeId6") }
+    },
+    {
+      "departureCity": "Budapest",
+      "departureAirport": "BUD",
+      "arrivalCity": "New York",
+      "arrivalAirport": "JFK",
+      "durationInMin": 660,
+      "distanceInKm": 6500,
+      "Aircraft": { "name": "Boeing 777", "aircraftId": ObjectId("aircraftId3") },
+      "Price": 2800.00,
+      "daysOfOperation": ["Monday", "Wednesday", "Friday", "Sunday"],
+      "cabinCrew": [
+        { "name": "Emily Johnson", "employeeId": ObjectId("employeeId2") },
+        { "name": "Sophia Anderson", "employeeId": ObjectId("employeeId4") },
+        { "name": "Liam Smith", "employeeId": ObjectId("employeeId11") },
+        { "name": "Oliver Davis", "employeeId": ObjectId("employeeId13") }
+      ],
+      "pilot": { "name": "Emma Johnson", "employeeId": ObjectId("employeeId3") },
+      "stopoverCities": ["Reykjavik"],
+      "stopoverAirports": ["KEF"]
+    },
+    {
+      "departureCity": "Berlin",
+      "departureAirport": "TXL",
+      "arrivalCity": "Moscow",
+      "arrivalAirport": "SVO",
+      "durationInMin": 200,
+      "distanceInKm": 1200,
+      "Aircraft": { "name": "Airbus A321", "aircraftId": ObjectId("aircraftId4") },
+      "Price": 300.00,
+      "daysOfOperation": ["Tuesday", "Thursday", "Saturday"],
+      "cabinCrew": [
+        { "name": "Sophia Anderson", "employeeId": ObjectId("employeeId4") },
+        { "name": "Daniel Johnson", "employeeId": ObjectId("employeeId5") },
+        { "name": "Liam Smith", "employeeId": ObjectId("employeeId11") }
+      ],
+      "pilot": { "name": "Olivia Davis", "employeeId": ObjectId("employeeId12") }
+    },
+    {
+      "departureCity": "Mongolia",
+      "departureAirport": "ULN",
+      "arrivalCity": "Bangkok",
+      "arrivalAirport": "BKK",
+      "durationInMin": 780,
+      "distanceInKm": 4800,
+      "Aircraft": { "name": "Boeing 787", "aircraftId": ObjectId("aircraftId5") },
+      "Price": 1800.00,
+      "daysOfOperation": ["Monday", "Wednesday", "Friday", "Saturday"],
+      "cabinCrew": [
+        { "name": "Oliver Smith", "employeeId": ObjectId("employeeId7") },
+        { "name": "Isabella Johnson", "employeeId": ObjectId("employeeId8") },
+        { "name": "Ethan Anderson", "employeeId": ObjectId("employeeId9") }
+      ],
+      "pilot": { "name": "Adam Johnson", "employeeId": ObjectId("employeeId10") },
+      "stopoverCities": ["Moscow"],
+      "stopoverAirports": ["SVO"]
+    },
+    {
+      "departureCity": "Tokyo",
+      "departureAirport": "HND",
+      "arrivalCity": "Sydney",
+      "arrivalAirport": "SYD",
+      "durationInMin": 660,
+      "distanceInKm": 8800,
+      "Aircraft": { "name": "Airbus A350", "aircraftId": ObjectId("aircraftId6") },
+      "Price": 3200.00,
+      "daysOfOperation": ["Tuesday", "Friday", "Sunday"],
+      "cabinCrew": [
+        { "name": "Isabella Johnson", "employeeId": ObjectId("employeeId8") },
+        { "name": "Ethan Anderson", "employeeId": ObjectId("employeeId9") },
+        { "name": "Oliver Davis", "employeeId": ObjectId("employeeId13") },
+        { "name": "Sophia Davis", "employeeId": ObjectId("employeeId14") }
+      ],
+      "pilot": { "name": "Adam Johnson", "employeeId": ObjectId("employeeId10") },
+      "stopoverCities": ["Singapore"],
+      "stopoverAirports": ["SIN"]
+    }
+  ])
+  
