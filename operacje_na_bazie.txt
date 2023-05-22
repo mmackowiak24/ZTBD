@@ -1,0 +1,16 @@
+1. zmiana ścieżki
+cd C:\Users\73481\mongodb-database-tools-windows-x86_64-100.7.0
+
+2. import (najpierw trzeba pobrać DB tools)
+mongoimport -h kti-lab1.ue.poznan.pl:27017 -u ztbd120080 -p 120080 --authenticationDatabase=ztbd120080 -d ztbd12080 -c MojaKolekcja "C:\Users\73481\enron50.json"
+
+3. import CSV
+mongoimport -h kti-lab1.ue.poznan.pl:27017 -u ztbd120080 -p 120080 --authenticationDatabase=ztbd120080 -d ztbd120080 -c MojaKolekcjaCSV 
+--type csv --headerline --ignoreBlanks --file "C:\Users\73481\countries.csv"
+
+4. backup
+mongodump -h kti-lab1.ue.poznan.pl:27017 -u ztbd120080 -p 120080 --authenticationDatabase=ztbd120080 -d ztbd120080 
+-o backup
+
+5. restore
+mongorestore -h kti-lab1.ue.poznan.pl:27017 -u ztbd120080 -p 120080 --authenticationDatabase=ztbd120080 -d ztbd120080 "ścieżka do backupu"
