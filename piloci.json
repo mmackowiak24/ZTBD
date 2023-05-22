@@ -73,5 +73,67 @@ db.pilots.insertMany([
         "email": "jane.smith@yahoo.com",
         "phone": "555-987-6543"
       },
-      "role": "Pilot
+      "role": "Pilot",
+      "experienceLevel": "Senior",
+      "licenseNumber": "PL54321",
+      "certifications": ["ATP", "Type Rating: Airbus A320"],
+      "availability": {
+        "from": ISODate("2023-05-18T00:00:00Z"),
+        "to": ISODate("2023-05-22T00:00:00Z")
+      },
+      "assignedFlights": [
+        {
+          "flightNumber": "DEF456",
+          "departureDate": ISODate("2023-05-20T14:00:00Z"),
+          "arrivalDate": ISODate("2023-05-20T18:00:00Z"),
+          "aircraft": "Airbus A320",
+          "status": "Assigned"
+        },
+        {
+          "flightNumber": "GHI789",
+          "departureDate": ISODate("2023-05-21T10:00:00Z"),
+          "arrivalDate": ISODate("2023-05-21T16:00:00Z"),
+          "aircraft": "Boeing 737",
+          "status": "Assigned"
+        }
+      ]
+    },
+    {
+      "pilotId": "P004",
+      "name": "Felix Weatherall",
+      "gender": "Male",
+      "contact": {
+        "email": "felix.weatherall@gmail.com",
+        "phone": "555-123-4567"
+      },
+      "role": "Pilot",
+      "experienceLevel": "Senior",
+      "licenseNumber": "PL98765",
+      "certifications": ["ATP", "Type Rating: Boeing 737"],
+      "availability": {
+        "from": ISODate("2023-05-25T00:00:00Z"),
+        "to": ISODate("2023-05-25T23:59:59Z")
+      },
+      "assignedFlights": []
+    },
+    {
+      "pilotId": "P005",
+      "name": "Jayda Guy",
+      "gender": "Female",
+      "contact": {
+        "email": "jayda.guy@gmail.com",
+        "phone": "555-323-3289"
+      },
+      "role": "Pilot",
+      "experienceLevel": "Senior",
+      "licenseNumber": "PL99634",
+      "certifications": ["ATP", "Type Rating: Airbus A320", "Emergency Procedures"],
+      "availability": {
+        "from": ISODate("2023-06-01T00:00:00Z"),
+        "to": ISODate("2023-06-07T00:00:00Z")
+      },
+      "assignedFlights": []
+    }
+  ]);
+  
   
