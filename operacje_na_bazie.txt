@@ -3,6 +3,11 @@ cd C:\Users\73481\mongodb-database-tools-windows-x86_64-100.7.0
 
 2. import (najpierw trzeba pobrać DB tools)
 mongoimport -h kti-lab1.ue.poznan.pl:27017 -u ztbd120080 -p 120080 --authenticationDatabase=ztbd120080 -d ztbd12080 -c MojaKolekcja "C:\Users\73481\enron50.json"
+-h host
+-u user
+-p pass
+-d database
+-c collection
 
 3. import CSV
 mongoimport -h kti-lab1.ue.poznan.pl:27017 -u ztbd120080 -p 120080 --authenticationDatabase=ztbd120080 -d ztbd120080 -c MojaKolekcjaCSV 
