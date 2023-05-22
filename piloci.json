@@ -10,10 +10,7 @@ db.pilots.insertMany([
       "role": "Pilot",
       "experienceLevel": "Senior",
       "licenseNumber": "PL98765",
-      "certifications": ["ATP", "Type Rating: Boeing 737"],
-      "availability": {
-        "from": ISODate("2023-05-15T00:00:00Z"),
-        "to": ISODate("2023-05-20T00:00:00Z")
+      "certifications": ["ATP", "Type Rating: Boeing 737"]
       },
       "assignedFlights": [
         {
@@ -43,10 +40,7 @@ db.pilots.insertMany([
       "role": "Pilot",
       "experienceLevel": "Junior",
       "licenseNumber": "PL54321",
-      "certifications": ["ATP", "Type Rating: Airbus A320"],
-      "availability": {
-        "from": ISODate("2023-05-18T00:00:00Z"),
-        "to": ISODate("2023-05-22T00:00:00Z")
+      "certifications": ["ATP", "Type Rating: Airbus A320"]
       },
       "assignedFlights": [
         {
@@ -76,10 +70,7 @@ db.pilots.insertMany([
       "role": "Pilot",
       "experienceLevel": "Senior",
       "licenseNumber": "PL54321",
-      "certifications": ["ATP", "Type Rating: Airbus A320"],
-      "availability": {
-        "from": ISODate("2023-05-18T00:00:00Z"),
-        "to": ISODate("2023-05-22T00:00:00Z")
+      "certifications": ["ATP", "Type Rating: Airbus A320"]
       },
       "assignedFlights": [
         {
@@ -109,10 +100,7 @@ db.pilots.insertMany([
       "role": "Pilot",
       "experienceLevel": "Senior",
       "licenseNumber": "PL98765",
-      "certifications": ["ATP", "Type Rating: Boeing 737"],
-      "availability": {
-        "from": ISODate("2023-05-25T00:00:00Z"),
-        "to": ISODate("2023-05-25T23:59:59Z")
+      "certifications": ["ATP", "Type Rating: Boeing 737"]
       },
       "assignedFlights": []
     },
@@ -127,10 +115,7 @@ db.pilots.insertMany([
       "role": "Pilot",
       "experienceLevel": "Senior",
       "licenseNumber": "PL99634",
-      "certifications": ["ATP", "Type Rating: Airbus A320", "Emergency Procedures"],
-      "availability": {
-        "from": ISODate("2023-06-01T00:00:00Z"),
-        "to": ISODate("2023-06-07T00:00:00Z")
+      "certifications": ["ATP", "Type Rating: Airbus A320", "Emergency Procedures"]
       },
       "assignedFlights": []
     }
