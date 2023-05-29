@@ -1,102 +1,112 @@
-db.airways.insertMany([
+db.aircrafts.insertMany([
   {
+    id: "1a2b3c",
     name: "Boeing 747",
     maxSpeed: 988,
     wingspan: 64,
     capacity: 416,
-    year: "1970",
-    fuelUsage: "47.620 liters per hour",
-    maxCarryWeight: "181.437 kilograms",
-    range: "14.800 kilometers"
+    year: 1970,
+    fuelUsageInLitresPerHour: 47620,
+    maxCarryWeightInKg: 181437,
+    rangeInKm: 14800
   },
   {
+    id: "4d5e6f",
     name: "Bombardier CRJ-900",
     maxSpeed: 880,
     wingspan: 25,
     capacity: 90,
-    year: "2001",
-    fuelUsage: "7.073 liters per hour",
-    maxCarryWeight: "37.875 kilograms",
-    range: "3.106 kilometers"
+    year: 2001,
+    fuelUsageInLitresPerHour: 7073,
+    maxCarryWeightInKg: 37875,
+    rangeInKm: 3106
   },
   {
+    id: "7g8h9i",
     name: "Airbus A380",
     maxSpeed: 1185,
     wingspan: 80,
     capacity: 853,
-    year: "2005",
-    fuelUsage: "50.866 liters per hour",
-    maxCarryWeight: "575.000 kilograms",
-    range: "15.700 kilometers"
+    year: 2005,
+    fuelUsageInLitresPerHour: 50866,
+    maxCarryWeightInKg: 575000,
+    rangeInKm: 15700
   },
   {
+    id: "0j1k2l",
     name: "Embraer E-Jet 195",
     maxSpeed: 876,
     wingspan: 31,
     capacity: 132,
-    year: "2004",
-    fuelUsage: "6.555 liters per hour",
-    maxCarryWeight: "22.000 kilograms",
-    range: "3.334 kilometers"
+    year: 2004,
+    fuelUsageInLitresPerHour: 6555,
+    maxCarryWeightInKg: 22000,
+    rangeInKm: 3334
   },
   {
+    id: "3m4n5o",
     name: "Embraer 175",
     maxSpeed: 890,
     wingspan: 26,
     capacity: 88,
-    year: "2003",
-    fuelUsage: "5.205 liters per hour",
-    maxCarryWeight: "22.000 kilograms",
-    range: "3.114 kilometers"
+    year: 2003,
+    fuelUsageInLitresPerHour: 5205,
+    maxCarryWeightInKg: 22000,
+    rangeInKm: 3114
   },
   {
+    id: "6p7q8r",
     name: "Concorde",
     maxSpeed: 2179,
     wingspan: 26,
     capacity: 100,
-    year: "1969",
-    fuelUsage: "100.305 liters per hour",
-    maxCarryWeight: "49.592 kilograms",
-    range: "7.250 kilometers"
+    year: 1969,
+    fuelUsageInLitresPerHour: 100305,
+    maxCarryWeightInKg: 49592,
+    rangeInKm: 7250
   },
   {
+    id: "9s0t1u",
     name: "Embraer E190",
     maxSpeed: 871,
     wingspan: 29.7,
     capacity: 106,
-    year: "2005",
-    fuelUsage: "7.222 liters per hour",
-    maxCarryWeight: "22.000 kilograms",
-    range: "4.260 kilometers"
+    year: 2005,
+    fuelUsageInLitresPerHour: 7222,
+    maxCarryWeightInKg: 22000,
+    rangeInKm: 4260
   },
   {
+    id: "2v3w4x",
     name: "Airbus A321",
     maxSpeed: 876,
     wingspan: 34,
     capacity: 220,
-    year: "1993",
-    fuelUsage: "24.222 liters per hour",
-    maxCarryWeight: "42.267 kilograms",
-    range: "5.950 kilometers"
+    year: 1993,
+    fuelUsageInLitresPerHour: 24222,
+    maxCarryWeightInKg: 42267,
+    rangeInKm: 5950
   },
   {
+    id: "5y6z7a",
     name: "Boeing 737 MAX 8",
     maxSpeed: 832,
     wingspan: 35.9,
     capacity: 210,
-    year: "2017",
-    fuelUsage: "10.219 liters per hour",
-    maxCarryWeight: "65.594 kilograms",
-    range: "6.570 kilometers"
+    year: 2017,
+    fuelUsageInLitresPerHour: 10219,
+    maxCarryWeightInKg: 65594,
+    rangeInKm: 6570
   },
   {
+    id: "8b9c0d",
     name: "Airbus A320",
     maxSpeed: 903,
     wingspan: 35.8,
     capacity: 180,
-    year: "1987",
-    fuelUsage: "21.311 liters per hour",
-    maxCarryWeight: "42.267 kilograms",
-    range: "5.930 kilometers"
+    year: 1987,
+    fuelUsageInLitresPerHour: 21311,
+    maxCarryWeightInKg: 42267,
+    rangeInKm: 5930
   }
-])
+]);
