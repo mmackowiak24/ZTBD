@@ -11,10 +11,10 @@ db.flightConnections.insertMany([
       "Price": 200.00,
       "daysOfOperation": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "cabinCrew": [
-        {"employeeId":"employeeId1"},
-        {"employeeId":"employeeId2"}
+        {"employeeId":"C001"},
+        {"employeeId":"C008"}
       ],
-      "pilot": { "name": "Emma Johnson", "employeeId":"employeeId3" }
+      "pilot": {"employeeId":"P004" }
     },
     {
       "connectionId": "KRKCDG0",
@@ -28,10 +28,10 @@ db.flightConnections.insertMany([
       "Price": 250.00,
       "daysOfOperation": ["Monday", "Wednesday", "Friday"],
       "cabinCrew": [
-        {"employeeId":"employeeId4" },
-        {"employeeId":"employeeId5"}
+        {"employeeId":"C004" },
+        {"employeeId":"C014"}
       ],
-      "pilot": {"employeeId":"employeeId6" }
+      "pilot": {"employeeId":"P005" }
     },
     {
       "connectionId": "BUDJFK1",
@@ -45,12 +45,11 @@ db.flightConnections.insertMany([
       "Price": 2800.00,
       "daysOfOperation": ["Monday", "Wednesday", "Friday", "Sunday"],
       "cabinCrew": [
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"}
+        {"employeeId":"C007"},
+        {"employeeId":"C002"},
+        {"employeeId":"C005"}
       ],
-      "pilot": {"employeeId":"employeeId3"},
+      "pilot": {"employeeId":"P001"},
       "stopoverCities": ["Reykjavik"],
       "stopoverAirports": ["KEF"]
     },
@@ -66,12 +65,10 @@ db.flightConnections.insertMany([
       "Price": 300.00,
       "daysOfOperation": ["Tuesday", "Thursday", "Saturday"],
       "cabinCrew": [
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"}
+        {"employeeId":"C011"},
+        {"employeeId":"C010"}
       ],
-      "pilot": {"employeeId":"employeeId12"}
+      "pilot": {"employeeId":"P002"}
     },
     {
       "connectionId": "ULNBKK1",
@@ -85,12 +82,11 @@ db.flightConnections.insertMany([
       "Price": 1800.00,
       "daysOfOperation": ["Monday", "Wednesday", "Friday", "Saturday"],
       "cabinCrew": [
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"}
+        {"employeeId":"C014"},
+        {"employeeId":"C006"},
+        {"employeeId":"C012"}
       ],
-      "pilot": {"employeeId":"employeeId10"},
+      "pilot": {"employeeId":"P003"},
       "stopoverCities": ["Moscow"],
       "stopoverAirports": ["SVO"]
     },
@@ -106,12 +102,11 @@ db.flightConnections.insertMany([
       "Price": 3200.00,
       "daysOfOperation": ["Tuesday", "Friday", "Sunday"],
       "cabinCrew": [
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"},
-        {"employeeId":"employeeId8"}
+        {"employeeId":"C009"},
+        {"employeeId":"C003"}
+        {"employeeId":"C015"}
       ],
-      "pilot": {"employeeId":"employeeId10"},
+      "pilot": {"employeeId":"P006"},
       "stopoverCities": ["Singapore"],
       "stopoverAirports": ["SIN"]
     }
