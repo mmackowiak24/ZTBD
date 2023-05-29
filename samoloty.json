@@ -1,4 +1,4 @@
-db.airways.insertMany([
+db.aircrafts.insertMany([
   {
     name: "Boeing 747",
     maxSpeed: 988,
@@ -99,4 +99,4 @@ db.airways.insertMany([
     maxCarryWeight: "42.267 kilograms",
     range: "5.930 kilometers"
   }
-])
+]);
