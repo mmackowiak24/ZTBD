@@ -1,97 +1,568 @@
+//Pilots
 db.employees.insertMany([
-    {
-      "employeeId": "P001",
-      "name": "Frank Ocean",
-      "gender": "Male",
-      "contact": {
-        "email": "73481@student.ue.poznan.pl",
-        "phone": "123-456-7890"
-      },
-      "role": "Pilot",
-      "experienceLevel": "Senior",
-      "licenseNumber": "PL98765",
-      "certifications": ["ATP", "Type Rating: Boeing 737"]
-      },
-      "assignedFlights": [
+  {
+    "employeeId": "P001",
+    "name": "Frank Ocean",
+    "gender": "Male",
+    "contact": {
+      "email": "73481@student.ue.poznan.pl",
+      "phone": "123-456-7890"
+    },
+    "role": "Pilot",
+    "experienceLevel": "Senior",
+    "licenseNumber": "PL98765",
+    "certifications": ["ATP", "Type Rating: Boeing 737"]
+    },
+    "assignedFlights": [
+      {"connectionId":"connectionId"}
+    ]
+  },
+  {
+    "employeeId": "P002",
+    "name": "Rick Johnson",
+    "gender": "Male",
+    "contact": {
+      "email": "rick.johnson@wp.pl",
+      "phone": "987-654-3210"
+    },
+    "role": "Pilot",
+    "experienceLevel": "Junior",
+    "licenseNumber": "PL54321",
+    "certifications": ["ATP", "Type Rating: Airbus A320"]
+    },
+    "assignedFlights": [
+      {
         {"connectionId":"connectionId"}
-      ]
+      },
+      {
+        {"connectionId":"connectionId"}
+      }
+    ]
+  },
+  {
+    "employeeId": "P003",
+    "name": "Jane Smith",
+    "gender": "Female",
+    "contact": {
+      "email": "jane.smith@yahoo.com",
+      "phone": "555-987-6543"
     },
-    {
-      "employeeId": "P002",
-      "name": "Rick Johnson",
-      "gender": "Male",
-      "contact": {
-        "email": "rick.johnson@wp.pl",
-        "phone": "987-654-3210"
-      },
-      "role": "Pilot",
-      "experienceLevel": "Junior",
-      "licenseNumber": "PL54321",
-      "certifications": ["ATP", "Type Rating: Airbus A320"]
-      },
-      "assignedFlights": [
-        {
-          {"connectionId":"connectionId"}
-        },
-        {
-          {"connectionId":"connectionId"}
-        }
-      ]
+    "role": "Pilot",
+    "experienceLevel": "Senior",
+    "licenseNumber": "PL54321",
+    "certifications": ["ATP", "Type Rating: Airbus A320"]
     },
-    {
-      "employeeId": "P003",
-      "name": "Jane Smith",
-      "gender": "Female",
-      "contact": {
-        "email": "jane.smith@yahoo.com",
-        "phone": "555-987-6543"
+    "assignedFlights": [
+      {
+        {"connectionId":"connectionId"}
       },
-      "role": "Pilot",
-      "experienceLevel": "Senior",
-      "licenseNumber": "PL54321",
-      "certifications": ["ATP", "Type Rating: Airbus A320"]
-      },
-      "assignedFlights": [
-        {
-          {"connectionId":"connectionId"}
-        },
-        {
-          {"connectionId":"connectionId"}
-        }
-      ]
+      {
+        {"connectionId":"connectionId"}
+      }
+    ]
+  },
+  {
+    "employeeId": "P004",
+    "name": "Thaddeus Wrona",
+    "gender": "Male",
+    "contact": {
+      "email": "thaddeus.wrona@bezpodwozia.pl",
+      "phone": "555-420-6978"
     },
-    {
-      "employeeId": "P004",
-      "name": "Felix Weatherall",
-      "gender": "Male",
-      "contact": {
-        "email": "felix.weatherall@gmail.com",
-        "phone": "555-123-4567"
-      },
-      "role": "Pilot",
-      "experienceLevel": "Senior",
-      "licenseNumber": "PL98765",
-      "certifications": ["ATP", "Type Rating: Boeing 737"]
-      },
-      "assignedFlights": [
-        {"connectionId":"connectionId"}]
+    "role": "Pilot",
+    "experienceLevel": "Senior",
+    "licenseNumber": "PL98765",
+    "certifications": ["ATP", "Type Rating: Boeing 737"]
     },
-    {
-      "employeeId": "P005",
-      "name": "Jayda Guy",
-      "gender": "Female",
-      "contact": {
-        "email": "jayda.guy@gmail.com",
-        "phone": "555-323-3289"
+    "assignedFlights": [
+      {"connectionId":"connectionId"}]
+  },
+  {
+    "employeeId": "P005",
+    "name": "Jayda Guy",
+    "gender": "Female",
+    "contact": {
+      "email": "jayda.guy@gmail.com",
+      "phone": "555-323-3289"
+    },
+    "role": "Pilot",
+    "experienceLevel": "Senior",
+    "licenseNumber": "PL99634",
+    "certifications": ["ATP", "Type Rating: Airbus A320", "Emergency Procedures"]
+    },
+    "assignedFlights": [
+      {"connectionId":"connectionId"}]
+  },
+  {
+    "employeeId": "P006",
+    "name": "Maxwell Roberts",
+    "gender": "Male",
+    "contact": {
+      "email": "maxwell.roberts@example.com",
+      "phone": "555-789-4423"
+    },
+    "role": "Pilot",
+    "experienceLevel": "Intermediate",
+    "licenseNumber": "PL12345",
+    "certifications": ["ATP", "Type Rating: Boeing 737", "Crosswind Landings"],
+    "assignedFlights": [
+      { "connectionId": "connectionId" },
+      { "connectionId": "connectionId" }
+    ]
+  },
+  {
+    "employeeId": "P007",
+    "name": "Red Baron Corki",
+    "gender": "Male",
+    "contact": {
+      "email": "baron.corki@rift.com",
+      "phone": "555-789-4423"
+    },
+    "role": "Pilot",
+    "experienceLevel": "Intermediate",
+    "licenseNumber": "UK84209",
+    "certifications": ["ATP", "Type Rating: Boeing 737", "Crosswind Landings"],
+    "assignedFlights": [
+      { "connectionId": "connectionId" },
+      { "connectionId": "connectionId" }
+    ]
+  }
+]);
+
+
+
+//Flight attendants
+db.employees.insertMany{[
+  {
+    "employeeId": "C001",
+    "name": "Sophia Johnson",
+    "gender": "Female",
+    "contact": {
+      "email": "sophia.johnson@gmail.com",
+      "phone": "555-144-8389"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Junior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C002",
+    "name": "Michael Thompson",
+    "gender": "Male",
+    "contact": {
+      "email": "michael.thompson@example.com",
+      "phone": "555-987-6543"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
       },
-      "role": "Pilot",
-      "experienceLevel": "Senior",
-      "licenseNumber": "PL99634",
-      "certifications": ["ATP", "Type Rating: Airbus A320", "Emergency Procedures"]
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C003",
+    "name": "Daniel Williams",
+    "gender": "Male",
+    "contact": {
+      "email": "daniel.williams@example.com",
+      "phone": "555-987-6543"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
       },
-      "assignedFlights": [
-        {"connectionId":"connectionId"}]
-    }
-  ]);
-  
-  
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C004",
+    "name": "Olivia Davis",
+    "gender": "Female",
+    "contact": {
+      "email": "olivia.davis@example.com",
+      "phone": "555-345-9871"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Junior",
+    "certifications": [
+      "CPR",
+      "First Aid"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C005",
+    "name": "Alexandre Martinez",
+    "gender": "Male",
+    "contact": {
+      "email": "alexandre.martinez@example.com",
+      "phone": "555-897-4201"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Expert",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid",
+      "In-flight Services",
+      "Language Proficiency: French"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C006",
+    "name": "Sophie Adams",
+    "gender": "Female",
+    "contact": {
+      "email": "sophie.adams@example.com",
+      "phone": "555-111-2222"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Junior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C007",
+    "name": "Emily Wilson",
+    "gender": "Female",
+    "contact": {
+      "email": "emily.wilson@example.com",
+      "phone": "555-333-4444"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "First Aid",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C008",
+    "name": "Adam Johnson",
+    "gender": "Male",
+    "contact": {
+      "email": "adam.johnson@example.com",
+      "phone": "555-555-6666"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Intermediate",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "Foreign Language: Spanish"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C009",
+    "name": "Isabella Wilson",
+    "gender": "Female",
+    "contact": {
+      "email": "isabella.wilson@example.com",
+      "phone": "555-368-8127"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Junior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C010",
+    "name": "William Thompson",
+    "gender": "Male",
+    "contact": {
+      "email": "william.thompson@example.com",
+      "phone": "555-997-6923"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C011",
+    "name": "Ava Davis",
+    "gender": "Female",
+    "contact": {
+      "email": "ava.davis@example.com",
+      "phone": "555-124-2222"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C012",
+    "name": "Liam Martinez",
+    "gender": "Male",
+    "contact": {
+      "email": "liam.martinez@example.com",
+      "phone": "555-212-3256"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Expert",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid",
+      "In-flight Services",
+      "Language Proficiency: Spanish"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C013",
+    "name": "Marta Kowalska",
+    "gender": "Female",
+    "contact": {
+      "email": "marta.kowalska@gmail.com",
+      "phone": "555-143-2356"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Junior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C014",
+    "name": "Jakub Nowak",
+    "gender": "Male",
+    "contact": {
+      "email": "jakub.nowak@gmail.com",
+      "phone": "555-262-8721"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C015",
+    "name": "Anna Kaczmarek",
+    "gender": "Female",
+    "contact": {
+      "email": "anna.kaczmarek@yahoo.com",
+      "phone": "555-903-4511"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Senior",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "In-flight Services"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  },
+  {
+    "employeeId": "C016",
+    "name": "Marcin Kowalczyk",
+    "gender": "Male",
+    "contact": {
+      "email": "marcin.kowalczyk@siema.com",
+      "phone": "555-421-5690"
+    },
+    "role": "Flight Attendant",
+    "experienceLevel": "Expert",
+    "certifications": [
+      "CPR",
+      "Emergency Evacuation",
+      "First Aid",
+      "In-flight Services",
+      "Language Proficiency: German"
+    ],
+    "assignedFlights": [
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      },
+      {
+        "connectionId": "connectionId"
+      }
+    ]
+  }
+]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
