@@ -1,6 +1,6 @@
 db.aircrafts.insertMany([
   {
-    "id": "1a2b3c",
+    "aircraftId": "A001",
     "name": "Boeing 747",
     "maxSpeed": 988,
     "wingspan": 64,
@@ -14,7 +14,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "4d5e6f",
+    "aircraftId": "A002",
     "name": "Bombardier CRJ-900",
     "maxSpeed": 880,
     "wingspan": 25,
@@ -29,7 +29,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "7g8h9i",
+    "aircraftId": "A003",
     "name": "Airbus A380",
     "maxSpeed": 1185,
     "wingspan": 80,
@@ -44,7 +44,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "0j1k2l",
+    "aircraftId": "A004",
     "name": "Embraer E-Jet 195",
     "maxSpeed": 876,
     "wingspan": 31,
@@ -58,7 +58,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "3m4n5o",
+    "aircraftId": "A005",
     "name": "Embraer 175",
     "maxSpeed": 890,
     "wingspan": 26,
@@ -72,7 +72,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "6p7q8r",
+    "aircraftId": "A006",
     "name": "Concorde",
     "maxSpeed": 2179,
     "wingspan": 26,
@@ -88,7 +88,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "9s0t1u",
+    "aircraftId": "A007",
     "name": "Embraer E190",
     "maxSpeed": 871,
     "wingspan": 29.7,
@@ -102,7 +102,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "2v3w4x",
+    "aircraftId": "A008",
     "name": "Airbus A321",
     "maxSpeed": 876,
     "wingspan": 34,
@@ -118,7 +118,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "5y6z7a",
+    "aircraftId": "A009",
     "name": "Boeing 737 MAX 8",
     "maxSpeed": 832,
     "wingspan": 35.9,
@@ -134,7 +134,7 @@ db.aircrafts.insertMany([
     ]
   },
   {
-    "id": "8b9c0d",
+    "aircraftId": "A010",
     "name": "Airbus A320",
     "maxSpeed": 903,
     "wingspan": 35.8,
