@@ -1,128 +1,4 @@
-//Pilots
 db.employees.insertMany([
-  {
-    "employeeId": "P001",
-    "name": "Frank Ocean",
-    "gender": "Male",
-    "contact": {
-      "email": "73481@student.ue.poznan.pl",
-      "phone": "123-456-7890"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Senior",
-    "licenseNumber": "PL98765",
-    "certifications": ["ATP", "Type Rating: Boeing 737"]
-    },
-    "assignedFlights": [
-      {"connectionId":"BUDJFK1"}
-    ]
-  },
-  {
-    "employeeId": "P002",
-    "name": "Rick Johnson",
-    "gender": "Male",
-    "contact": {
-      "email": "rick.johnson@wp.pl",
-      "phone": "987-654-3210"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Junior",
-    "licenseNumber": "PL54321",
-    "certifications": ["ATP", "Type Rating: Airbus A320"]
-    },
-    "assignedFlights": [
-      {
-        {"connectionId":"TXLSVO0"}
-      }
-    ]
-  },
-  {
-    "employeeId": "P003",
-    "name": "Jane Smith",
-    "gender": "Female",
-    "contact": {
-      "email": "jane.smith@yahoo.com",
-      "phone": "555-987-6543"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Senior",
-    "licenseNumber": "PL54321",
-    "certifications": ["ATP", "Type Rating: Airbus A320"]
-    },
-    "assignedFlights": [
-      {
-        {"connectionId":"ULNBKK1"}
-      }
-    ]
-  },
-  {
-    "employeeId": "P004",
-    "name": "Thaddeus Wrona",
-    "gender": "Male",
-    "contact": {
-      "email": "thaddeus.wrona@bezpodwozia.pl",
-      "phone": "555-420-6978"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Senior",
-    "licenseNumber": "PL98765",
-    "certifications": ["ATP", "Type Rating: Boeing 737"]
-    },
-    "assignedFlights": [
-      {"connectionId":"WAWLHR1"}]
-  },
-  {
-    "employeeId": "P005",
-    "name": "Jayda Guy",
-    "gender": "Female",
-    "contact": {
-      "email": "jayda.guy@gmail.com",
-      "phone": "555-323-3289"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Senior",
-    "licenseNumber": "PL99634",
-    "certifications": ["ATP", "Type Rating: Airbus A320", "Emergency Procedures"]
-    },
-    "assignedFlights": [
-      {"connectionId":"KRKCDG0"}]
-  },
-  {
-    "employeeId": "P006",
-    "name": "Maxwell Roberts",
-    "gender": "Male",
-    "contact": {
-      "email": "maxwell.roberts@example.com",
-      "phone": "555-789-4423"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Intermediate",
-    "licenseNumber": "PL12345",
-    "certifications": ["ATP", "Type Rating: Boeing 737", "Crosswind Landings"],
-    "assignedFlights": [
-      { "connectionId": "ULNBKK1" }
-    ]
-  },
-  {
-    "employeeId": "P007",
-    "name": "Red Baron Corki",
-    "gender": "Male",
-    "contact": {
-      "email": "baron.corki@rift.com",
-      "phone": "555-789-4423"
-    },
-    "role": "Pilot",
-    "experienceLevel": "Intermediate",
-    "licenseNumber": "UK84209",
-    "certifications": ["ATP", "Type Rating: Boeing 737", "Crosswind Landings"],
-    "assignedFlights": []
-  }
-]);
-
-
-
-//Flight attendants
-db.employees.insertMany{[
   {
     "employeeId": "C001",
     "name": "Sophia Johnson",
@@ -134,9 +10,9 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"}
     ],
     "assignedFlights": [
       {
@@ -155,17 +31,17 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid",
-      "In-flight Services"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
         "connectionId": "BUDJFK1"
       },
       {
-        "connectionId": "TXLSVO0"
+        "connectionId": "connectionId"
       }
     ]
   },
@@ -180,9 +56,9 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "In-flight Services"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -201,8 +77,8 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      "CPR",
-      "First Aid"
+      {"CPR"},
+      {"First Aid"}
     ],
     "assignedFlights": [
       {
@@ -221,11 +97,11 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Expert",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid",
-      "In-flight Services",
-      "Language Proficiency: French"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"},
+      {"In-flight Services"},
+      {"Language Proficiency: French"}
     ],
     "assignedFlights": [
       {
@@ -244,8 +120,8 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation"
+      {"CPR"},
+      {"Emergency Evacuation"}
     ],
     "assignedFlights": [
       {
@@ -264,9 +140,9 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "First Aid",
-      "In-flight Services"
+      {"CPR"},
+      {"First Aid"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -285,9 +161,9 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Intermediate",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "Foreign Language: Spanish"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"Foreign Language: Spanish"}
     ],
     "assignedFlights": [
       {
@@ -306,8 +182,8 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation"
+      {"CPR"},
+      {"Emergency Evacuation"}
     ],
     "assignedFlights": [
       {
@@ -326,10 +202,10 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid",
-      "In-flight Services"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -348,9 +224,9 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "In-flight Services"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -369,11 +245,11 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Expert",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid",
-      "In-flight Services",
-      "Language Proficiency: Spanish"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"},
+      {"In-flight Services"},
+      {"Language Proficiency: Spanish"}
     ],
     "assignedFlights": [
       {
@@ -392,8 +268,8 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation"
+      {"CPR"},
+      {"Emergency Evacuation"}
     ],
     "assignedFlights": []
   },
@@ -408,10 +284,10 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid",
-      "In-flight Services"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -433,9 +309,9 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "In-flight Services"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -454,28 +330,12 @@ db.employees.insertMany{[
     "role": "Flight Attendant",
     "experienceLevel": "Expert",
     "certifications": [
-      "CPR",
-      "Emergency Evacuation",
-      "First Aid",
-      "In-flight Services",
-      "Language Proficiency: German"
+      {"CPR"},
+      {"Emergency Evacuation"},
+      {"First Aid"},
+      {"In-flight Services"},
+      {"Language Proficiency: German"}
     ],
     "assignedFlights": []
   }
 ]}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
