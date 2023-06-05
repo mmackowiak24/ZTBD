@@ -17,7 +17,8 @@ db.employees.insertMany([
     ],
     "assignedFlights": [
       { "connectionId": "BUDJFK1" }
-    ]
+    ],
+    "employmentDate": ISODate("2016-09-01")
   },
   {
     "employeeId": "P002",
@@ -36,7 +37,8 @@ db.employees.insertMany([
     ],
     "assignedFlights": [
       { "connectionId": "TXLSVO0" }
-    ]
+    ],
+    "employmentDate": ISODate("2019-05-01")
   },
   {
     "employeeId": "P003",
@@ -55,7 +57,8 @@ db.employees.insertMany([
     ],
     "assignedFlights": [
       { "connectionId": "ULNBKK1" }
-    ]
+    ],
+    "employmentDate": ISODate("2014-12-01")
   },
   {
     "employeeId": "P004",
@@ -74,7 +77,8 @@ db.employees.insertMany([
     ],
     "assignedFlights": [
       { "connectionId": "WAWLHR1" }
-    ]
+    ],
+    "employmentDate": ISODate("1999-03-01")
   },
   {
     "employeeId": "P005",
@@ -94,7 +98,8 @@ db.employees.insertMany([
     ],
     "assignedFlights": [
       { "connectionId": "KRKCDG0" }
-    ]
+    ],
+    "employmentDate": ISODate("2007-05-01")
   },
   {
     "employeeId": "P006",
@@ -114,7 +119,8 @@ db.employees.insertMany([
     ],
     "assignedFlights": [
       { "connectionId": "ULNBKK1" }
-    ]
+    ],
+    "employmentDate": ISODate("2020-02-01")
   },
   {
     "employeeId": "P007",
@@ -132,7 +138,8 @@ db.employees.insertMany([
       { "certification": "Type Rating: Boeing 737" },
       { "certification": "Crosswind Landings" }
     ],
-    "assignedFlights": []
+    "assignedFlights": [],
+    "employmentDate": ISODate("2013-10-01")
   }
 ]);
 
@@ -160,7 +167,8 @@ db.employees.insertMany([
       {
         "connectionId": "WAWLHR1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2023-01-01")
   },
   {
     "employeeId": "C002",
@@ -185,7 +193,8 @@ db.employees.insertMany([
       {
         "connectionId": "TXLSVO0"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2019-05-01")
   },
   {
     "employeeId": "C003",
@@ -206,7 +215,8 @@ db.employees.insertMany([
       {
         "connectionId": "C003"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2017-05-01")
   },
   {
     "employeeId": "C004",
@@ -226,7 +236,8 @@ db.employees.insertMany([
       {
         "connectionId": "KRKCDG0"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2023-05-01")
   },
   {
     "employeeId": "C005",
@@ -249,7 +260,8 @@ db.employees.insertMany([
       {
         "connectionId": "BUDJFK`"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2008-03-01")
   },
   {
     "employeeId": "C006",
@@ -269,7 +281,8 @@ db.employees.insertMany([
       {
         "connectionId": "ULNBKK1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2021-08-01")
   },
   {
     "employeeId": "C007",
@@ -290,7 +303,8 @@ db.employees.insertMany([
       {
         "connectionId": "BUDJFK1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2010-04-01")
   },
   {
     "employeeId": "C008",
@@ -311,7 +325,8 @@ db.employees.insertMany([
       {
         "connectionId": "WAWLHR1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2015-05-01")
   },
   {
     "employeeId": "C009",
@@ -331,7 +346,8 @@ db.employees.insertMany([
       {
         "connectionId": "HNDSYD1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2021-06-01")
   },
   {
     "employeeId": "C010",
@@ -353,7 +369,8 @@ db.employees.insertMany([
       {
         "connectionId": "TXLSVO0"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2011-12-01")
   },
   {
     "employeeId": "C011",
@@ -374,7 +391,8 @@ db.employees.insertMany([
       {
         "connectionId": "TXLSVO0"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2004-03-01")
   },
   {
     "employeeId": "C012",
@@ -397,7 +415,8 @@ db.employees.insertMany([
       {
         "connectionId": "ULNBKK1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2001-02-01")
   },
   {
     "employeeId": "C013",
@@ -413,7 +432,8 @@ db.employees.insertMany([
       {"certification": "CPR"},
       {"certification": "Emergency Evacuation"}
     ],
-    "assignedFlights": []
+    "assignedFlights": [],
+    "employmentDate": ISODate("2020-01-01")
   },
   {
     "employeeId": "C014",
@@ -438,7 +458,8 @@ db.employees.insertMany([
       {
         "connectionId": "KRKCDG0"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2009-12-01")
   },
   {
     "employeeId": "C015",
@@ -459,7 +480,8 @@ db.employees.insertMany([
       {
         "connectionId": "HNDSYD1"
       }
-    ]
+    ],
+    "employmentDate": ISODate("2022-05-01")
   },
   {
     "employeeId": "C016",
@@ -485,7 +507,8 @@ db.employees.insertMany([
       {
         "connectionId": "KRKCDG0"
       }
-    ]
+    ],
+    "employmentDate": ISODate("1999-06-01")
   }
 ])
 
