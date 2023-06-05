@@ -1,6 +1,6 @@
 db.flightConnections.insertMany([
     {
-      "conectionId": "WAWLHR1",
+      "connectionId": "WAWLHR1",
       "departureCity": "Warsaw",
       "departureAirport": "WAW",
       "arrivalCity": "London",
