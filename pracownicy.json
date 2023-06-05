@@ -152,9 +152,9 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"}
     ],
     "assignedFlights": [
       {
@@ -173,10 +173,10 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -198,9 +198,9 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -219,8 +219,8 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      {"CPR"},
-      {"First Aid"}
+      {"certification": "CPR"},
+      {"certification": "First Aid"}
     ],
     "assignedFlights": [
       {
@@ -239,11 +239,11 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Expert",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"},
-      {"In-flight Services"},
-      {"Language Proficiency: French"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"},
+      {"certification": "Language Proficiency: French"}
     ],
     "assignedFlights": [
       {
@@ -262,8 +262,8 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"}
     ],
     "assignedFlights": [
       {
@@ -282,9 +282,9 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"First Aid"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -303,9 +303,9 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Intermediate",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"Foreign Language: Spanish"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "Foreign Language: Spanish"}
     ],
     "assignedFlights": [
       {
@@ -324,8 +324,8 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"}
     ],
     "assignedFlights": [
       {
@@ -344,10 +344,10 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -366,9 +366,9 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -387,11 +387,11 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Expert",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"},
-      {"In-flight Services"},
-      {"Language Proficiency: Spanish"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"},
+      {"certification": "Language Proficiency: Spanish"}
     ],
     "assignedFlights": [
       {
@@ -410,8 +410,8 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Junior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"}
     ],
     "assignedFlights": []
   },
@@ -426,10 +426,10 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -451,9 +451,9 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Senior",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"In-flight Services"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "In-flight Services"}
     ],
     "assignedFlights": [
       {
@@ -472,15 +472,23 @@ db.employees.insertMany([
     "role": "Flight Attendant",
     "experienceLevel": "Expert",
     "certifications": [
-      {"CPR"},
-      {"Emergency Evacuation"},
-      {"First Aid"},
-      {"In-flight Services"},
-      {"Language Proficiency: German"}
+      {"certification": "CPR"},
+      {"certification": "Emergency Evacuation"},
+      {"certification": "First Aid"},
+      {"certification": "In-flight Services"},
+      {"certification": "Language Proficiency: Polish"}
     ],
-    "assignedFlights": []
+    "assignedFlights": [
+      {
+        "connectionId": "BUDJFK1"
+      },
+      {
+        "connectionId": "KRKCDG0"
+      }
+    ]
   }
-]}
+])
+
 
 
 
