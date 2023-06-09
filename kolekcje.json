@@ -1,0 +1,3 @@
+db.createCollection("employees")
+db.createCollection("przeloty.json")
+db.createCollection("aircrafts")
