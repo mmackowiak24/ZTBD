@@ -1,114 +1,113 @@
 db.flightConnections.insertMany([
-    {
-      "connectionId": "WAWLHR1",
-      "departureCity": "Warsaw",
-      "departureAirport": "WAW",
-      "arrivalCity": "London",
-      "arrivalAirport": "LHR",
-      "durationInMin": 150,
-      "distanceInKm": 1400,
-      "Aircraft": {"aircraftId":"aircraftId1" },
-      "Price": 200.00,
-      "daysOfOperation": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "cabinCrew": [
-        {"employeeId":"C001"},
-        {"employeeId":"C008"}
-      ],
-      "pilot": {"employeeId":"P004" }
-    },
-    {
-      "connectionId": "KRKCDG0",
-      "departureCity": "Krakow",
-      "departureAirport": "KRK",
-      "arrivalCity": "Paris",
-      "arrivalAirport": "CDG",
-      "durationInMin": 180,
-      "distanceInKm": 1300,
-      "Aircraft": {"aircraftId":"aircraftId2" },
-      "Price": 250.00,
-      "daysOfOperation": ["Monday", "Wednesday", "Friday"],
-      "cabinCrew": [
-        {"employeeId":"C004" },
-        {"employeeId":"C014"}
-      ],
-      "pilot": {"employeeId":"P005" }
-    },
-    {
-      "connectionId": "BUDJFK1",
-      "departureCity": "Budapest",
-      "departureAirport": "BUD",
-      "arrivalCity": "New York",
-      "arrivalAirport": "JFK",
-      "durationInMin": 660,
-      "distanceInKm": 6500,
-      "Aircraft": {"aircraftId":"aircraftId3"},
-      "Price": 2800.00,
-      "daysOfOperation": ["Monday", "Wednesday", "Friday", "Sunday"],
-      "cabinCrew": [
-        {"employeeId":"C007"},
-        {"employeeId":"C002"},
-        {"employeeId":"C005"}
-      ],
-      "pilot": {"employeeId":"P001"},
-      "stopoverCities": ["Reykjavik"],
-      "stopoverAirports": ["KEF"]
-    },
-    {
-      "connectionId": "TXLSVO0",
-      "departureCity": "Berlin",
-      "departureAirport": "TXL",
-      "arrivalCity": "Moscow",
-      "arrivalAirport": "SVO",
-      "durationInMin": 200,
-      "distanceInKm": 1200,
-      "Aircraft": {"aircraftId":"aircraftId4" },
-      "Price": 300.00,
-      "daysOfOperation": ["Tuesday", "Thursday", "Saturday"],
-      "cabinCrew": [
-        {"employeeId":"C011"},
-        {"employeeId":"C010"}
-      ],
-      "pilot": {"employeeId":"P002"}
-    },
-    {
-      "connectionId": "ULNBKK1",
-      "departureCity": "Mongolia",
-      "departureAirport": "ULN",
-      "arrivalCity": "Bangkok",
-      "arrivalAirport": "BKK",
-      "durationInMin": 780,
-      "distanceInKm": 4800,
-      "Aircraft": {"aircraftId":"aircraftId5" },
-      "Price": 1800.00,
-      "daysOfOperation": ["Monday", "Wednesday", "Friday", "Saturday"],
-      "cabinCrew": [
-        {"employeeId":"C014"},
-        {"employeeId":"C006"},
-        {"employeeId":"C012"}
-      ],
-      "pilot": {"employeeId":"P003"},
-      "stopoverCities": ["Moscow"],
-      "stopoverAirports": ["SVO"]
-    },
-    {
-      "connectionId": "HNDSYD1",
-      "departureCity": "Tokyo",
-      "departureAirport": "HND",
-      "arrivalCity": "Sydney",
-      "arrivalAirport": "SYD",
-      "durationInMin": 660,
-      "distanceInKm": 8800,
-      "Aircraft": {"aircraftId":"aircraftId6" },
-      "Price": 3200.00,
-      "daysOfOperation": ["Tuesday", "Friday", "Sunday"],
-      "cabinCrew": [
-        {"employeeId":"C009"},
-        {"employeeId":"C003"}
-        {"employeeId":"C015"}
-      ],
-      "pilot": {"employeeId":"P006"},
-      "stopoverCities": ["Singapore"],
-      "stopoverAirports": ["SIN"]
-    }
-  ])
-  
+  {
+    "connectionId": "WAWLHR1",
+    "departureCity": "Warsaw",
+    "departureAirport": "WAW",
+    "arrivalCity": "London",
+    "arrivalAirport": "LHR",
+    "durationInMin": 150,
+    "distanceInKm": 1400,
+    "Aircraft": {"aircraftId":"aircraftId1" },
+    "Price": 200.00,
+    "daysOfOperation": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "cabinCrew": [
+      {"employeeId":"C001"},
+      {"employeeId":"C008"}
+    ],
+    "pilot": {"employeeId":"P004" }
+  },
+  {
+    "connectionId": "KRKCDG0",
+    "departureCity": "Krakow",
+    "departureAirport": "KRK",
+    "arrivalCity": "Paris",
+    "arrivalAirport": "CDG",
+    "durationInMin": 180,
+    "distanceInKm": 1300,
+    "Aircraft": {"aircraftId":"aircraftId2" },
+    "Price": 250.00,
+    "daysOfOperation": ["Monday", "Wednesday", "Friday"],
+    "cabinCrew": [
+      {"employeeId":"C004" },
+      {"employeeId":"C014"}
+    ],
+    "pilot": {"employeeId":"P005" }
+  },
+  {
+    "connectionId": "BUDJFK1",
+    "departureCity": "Budapest",
+    "departureAirport": "BUD",
+    "arrivalCity": "New York",
+    "arrivalAirport": "JFK",
+    "durationInMin": 660,
+    "distanceInKm": 6500,
+    "Aircraft": {"aircraftId":"aircraftId3"},
+    "Price": 2800.00,
+    "daysOfOperation": ["Monday", "Wednesday", "Friday", "Sunday"],
+    "cabinCrew": [
+      {"employeeId":"C007"},
+      {"employeeId":"C002"},
+      {"employeeId":"C005"}
+    ],
+    "pilot": {"employeeId":"P001"},
+    "stopoverCities": ["Reykjavik"],
+    "stopoverAirports": ["KEF"]
+  },
+  {
+    "connectionId": "TXLSVO0",
+    "departureCity": "Berlin",
+    "departureAirport": "TXL",
+    "arrivalCity": "Moscow",
+    "arrivalAirport": "SVO",
+    "durationInMin": 200,
+    "distanceInKm": 1200,
+    "Aircraft": {"aircraftId":"aircraftId4" },
+    "Price": 300.00,
+    "daysOfOperation": ["Tuesday", "Thursday", "Saturday"],
+    "cabinCrew": [
+      {"employeeId":"C011"},
+      {"employeeId":"C010"}
+    ],
+    "pilot": {"employeeId":"P002"}
+  },
+  {
+    "connectionId": "ULNBKK1",
+    "departureCity": "Mongolia",
+    "departureAirport": "ULN",
+    "arrivalCity": "Bangkok",
+    "arrivalAirport": "BKK",
+    "durationInMin": 780,
+    "distanceInKm": 4800,
+    "Aircraft": {"aircraftId":"aircraftId5" },
+    "Price": 1800.00,
+    "daysOfOperation": ["Monday", "Wednesday", "Friday", "Saturday"],
+    "cabinCrew": [
+      {"employeeId":"C014"},
+      {"employeeId":"C006"},
+      {"employeeId":"C012"}
+    ],
+    "pilot": {"employeeId":"P003"},
+    "stopoverCities": ["Moscow"],
+    "stopoverAirports": ["SVO"]
+  },
+  {
+    "connectionId": "HNDSYD1",
+    "departureCity": "Tokyo",
+    "departureAirport": "HND",
+    "arrivalCity": "Sydney",
+    "arrivalAirport": "SYD",
+    "durationInMin": 660,
+    "distanceInKm": 8800,
+    "Aircraft": {"aircraftId":"aircraftId6" },
+    "Price": 3200.00,
+    "daysOfOperation": ["Tuesday", "Friday", "Sunday"],
+    "cabinCrew": [
+      {"employeeId":"C009"},
+      {"employeeId":"C003"},
+      {"employeeId":"C015"}
+    ],
+    "pilot": {"employeeId":"P006"},
+    "stopoverCities": ["Singapore"],
+    "stopoverAirports": ["SIN"]
+  }
+])
