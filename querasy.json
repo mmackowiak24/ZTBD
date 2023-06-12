@@ -1,0 +1,82 @@
+// 6. Zapytanie (niebanalne) zliczające (count) oraz zapytanie (niebanalne) o wartości unikalne
+// (distinct). Zapytania powinny wykorzystywać parametr query.
+// 7. Dwa zapytania (niebanalne) wyszukujące (polecenie find), każde wykorzystujące przynajmniej
+// jeden operator porównujący. Ponadto, co najmniej raz należy wykorzystać projekcję i
+// sortowanie.
+// 8. Dwa zapytania (niebanalne) grupujące (aggregate z minimum 3 fazami) z wykorzystaniem różnych
+// operatorów: $group, $match, $sort, $limit, $project. Każdy w wymienionych
+// operatorów musi być użyty co najmniej raz w co najmniej jednym zapytaniu.
+
+//na 5
+
+// 1. Przynajmniej jeden indeks dodatkowy. Indeks musi być faktycznie użyteczny –np.
+// zwiększając efektywność zapytań lub dla zapewnienia unikalności wartości.
+// 2. Dodatkowe zapytanie (niebanalne) grupujące wykorzystujące operator $unwind, umieszczone na
+// serwerze w postaci funkcji.
+// 3. Dodatkowe zapytanie (niebanalne) grupujące z minimum 5 fazami, z wykorzystaniem co najmniej
+// 3 różnych operatorów, umieszczone na serwerze w postaci funkcji.
+// 4. Zapytanie wieloetapowe (co najmniej 2 etapy) (niebanalne) wykorzystujące referencje między
+// dokumentami, umieszczone na serwerze w postaci funkcji.
+
+
+//count
+//1. Policzenie ilości pracowników o roli pilota zawierających certyfikaty "Crosswind Landings" i "ATP":
+db.employees.count({
+    "role": "Pilot",
+    "certifications": {
+      $all: [
+        { $elemMatch: { "certification": "Crosswind Landings" } },
+        { $elemMatch: { "certification": "ATP" } }
+      ]
+    }
+  })
+
+//distinct
+//2. Pokaż listę miast do których istnieją połączenia
+db.flightConnections.distinct("departureCity")
+
+//find
+//3.  Znalezienie przelotów, do których przypisany jest pilot o identyfikatorze "P003"
+db.flightConnections.find({ "pilot.employeeId": "P006" })
+
+//find
+//4. Zapytanie $find z operatorem porównującym, projekcją i sortowaniem: Znajdź wszystkie przeloty o długości większej niż 500 minut, posortowane malejąco po długości.
+db.flightConnections.find(
+  {
+    "durationInMin": { $gt: 500 }
+  },
+  {
+    "connectionId": 1,
+    "durationInMin": 1,
+    "_id": 0
+  }
+).sort({"durationInMin": -1})
+//aggregate 1 - pogrupuj przeloty na dwie grupy wg dystansu. 
+db.flightConnections.aggregate([
+    {
+      $group: {
+        _id: {
+          $switch: {
+            branches: [
+              { case: { $lte: ["$distanceInKm", 2000] }, then: "Group 1: 0-2000" },
+              { case: { $gt: ["$distanceInKm", 2000] }, then: "Group 2: +2000" }
+            ],
+            default: "Group 3: undefined"
+          }
+        },
+        flights: { $push: "$$ROOT" }
+      }
+    }
+  ])
+
+//aggregate 2
+
+//aggregate 3
+
+//indeks dodatkowy
+
+//grupujące z unwind
+
+//grupujące, 5 faz, co najmniej 3 różne operatory
+
+//wieloetapowe (2 etapy at least essa) z referencjami między dokumentami
