@@ -51,6 +51,7 @@ db.flightConnections.find(
     "_id": 0
   }
 ).sort({"durationInMin": -1})
+
 //aggregate 1 - pogrupuj przeloty na dwie grupy wg dystansu. 
 db.flightConnections.aggregate([
     {
@@ -70,7 +71,20 @@ db.flightConnections.aggregate([
   ])
 
 //aggregate 2
-
+db.employees.aggregate([
+    {
+      $match: {
+        employeeId: /^P/
+      }
+    },
+    {
+      $group: {
+        _id: "$experienceLevel",
+        pilots: { $push: "$$ROOT" }
+      }
+    }
+  ])
+  
 //aggregate 3
 
 //indeks dodatkowy
